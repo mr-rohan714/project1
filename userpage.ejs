@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>welcome @<%= detail.user %>!</h1>
+    <div class="newpost">
+        <a href="/user/<%= detail._id %>/newpost" class="addurl">Add Post</a>
+    </div>
+    
+    <br><br><br>
+    <h2>All Posts:</h2>
+    <% for(let post of postDetail){ %>
+    <div class="container">
+        <div class="title">
+            <h3>&#35;<%= post.title %></h3>
+        </div>
+        <div class="content">
+            <%= post.content %>
+        </div>
+        <div class="extra">
+            <h4><a href="/user/like/<%= post._id %>" class="lc">Likes: <%= post.likes %></a> <a href="/user/comment/<%= post._id %>" class="lc">Comments</a></h4>
+            <div class="button">
+                <form action="/user/<%= post._id %>/delete?_method=DELETE" method="post" class="delete">
+                <button>Delete Post</button>
+            </form>
+            <form action="/user/editpost/<%= post._id %>" class="delete">
+                <button>Edit Post</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <% } %>
+</body>
+</html>

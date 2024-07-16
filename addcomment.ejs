@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form action="/user/add/<%= id %>" method="post">
+        <input type="text" name="from" placeholder="username">
+        <textarea name="content" placeholder="comment here!"></textarea>
+        <button>Add</button>
+    </form>
+</body>
+</html>

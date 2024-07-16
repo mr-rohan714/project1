@@ -1,0 +1,168 @@
+body {
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.box {
+    max-width: 1320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.newpost{
+    display: flex;
+    justify-content: center;
+}
+
+.addurl{
+    background-color: rgba(248, 246, 246, 0.823);
+    padding: 1rem;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.addurl:hover{
+    opacity: 0.7;
+}
+
+textarea{
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: large;
+}
+
+button{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1rem;
+    font-weight: 600;
+}
+.button {
+    display: flex;
+    /* justify-content: center */
+    background-color: antiquewhite;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+input:hover{
+    opacity: 0.8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.delete {
+    display: flex;
+    justify-content: flex-start;
+    background-color:antiquewhite;
+
+}
+
+input {
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 600;
+    border-style: dashed;
+    border-color: black;
+
+}
+
+.forgot:hover{
+    opacity: 0.7;
+    text-decoration: underline;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    max-width: 1320px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 6rem;
+}
+
+.title {
+    width: 40%;
+    border: 1px solid black;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+}
+
+.content {
+    width: 55%;
+    border: 1px solid black;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 5rem;
+    font-weight: 700;
+    font-size: large;
+    font-style: italic;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+}
+.lc:hover{
+    text-decoration: underline;
+}
+.lc {
+    padding: 2rem;
+}
+.contain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 2rem;
+    width: 15rem;
+}
+
+.from {
+    width: 80%;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10rem;
+    padding: 5px;
+    margin: 1rem;
+}
+
+.comment {
+    width: 80%;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10rem;
+    padding: 5px;
+}
